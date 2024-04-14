@@ -9,12 +9,48 @@
 <body>
     <header>
         <div id="Modes">
+            <input type="button" id="mode" value="dark" onclick="
+                if(document.querySelector('#mode').value==='dark'){
+                    document.querySelector('body').style.backgroundColor='#fff';
+                    document.querySelector('body').style.color='#000';
+                    document.querySelector('#mode').value='light';
+                }
+                else{
+                    document.querySelector('body').style.backgroundColor='#000';
+                    document.querySelector('body').style.color='#fff';
+                    document.querySelector('#mode').value='dark';
+                }
+                ">
             <input type="button" value="Day" onclick="document.querySelector('body').style.backgroundColor='#FFF';
             document.querySelector('body').style.color='#000';">
             <input type="button" value="Night" onclick="document.querySelector('body').style.backgroundColor='#000';
             document.querySelector('body').style.color='#fff';">
         </div>
+        <div id="header">
+            <div id="logo"></div>
+            <nav id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Article</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section></section>
+    <section>
+        <h1>Comparison Operators & Boolean</h1>
+        <div>
+            <h3>===</h3>
+            <script>
+                document.write("input : 1===1  | output : ",1===1,"<br />");// print : true
+                document.write("input : 1===2  | output : ",1===2); // print : false 
+            </script>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <footer></footer>
 </body>
 </html>
