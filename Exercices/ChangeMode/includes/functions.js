@@ -1,11 +1,15 @@
-function linksTextColor(color){
-    var alist=document.querySelectorAll('a');
-    var i=0;
-    while(i<alist.length){
-    alist[i].style.color=color;
-    i++;
+var Links={
+    setColor:function(color){
+        var alist=document.querySelectorAll('a');
+        var i=0;
+        while(i<alist.length){
+        alist[i].style.color=color;
+        i++;
+        }
     }
+    
 }
+
 
 var Body={setTxtColor:function(variable,color){
     variable.style.color=color;},
@@ -25,7 +29,7 @@ function modeHandler(self){
         Body.setTxtColor(target,'#fff');
         self.value='light';
 
-        linksTextColor('#c2f225')
+        Links.setColor('#c2f225')
 
     }
     else{
@@ -33,6 +37,6 @@ function modeHandler(self){
         Body.setTxtColor(target,'#000');
         self.value='dark';
 
-        linksTextColor('blue');
+        Links.setColor('blue');
     }
 }
