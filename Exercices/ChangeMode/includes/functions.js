@@ -1,27 +1,38 @@
+function linksTextColor(color){
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length){
+    alist[i].style.color=color;
+    i++;
+    }
+}
+
+var Body={setTxtColor:function(variable,color){
+    variable.style.color=color;},
+    setBGColor:function(variable,color){
+        variable.style.backgroundColor=color;
+    }
+}
+
+
+
+
+
 function modeHandler(self){
     var target =   document.querySelector('body');
     if(self.value==='dark'){
-        target.style.backgroundColor='#000';                    
-        target.style.color='#fff';
+        Body.setBGColor(target,'#000');                    
+        Body.setTxtColor(target,'#fff');
         self.value='light';
 
-        var alist=document.querySelectorAll('a');
-        var i=0;
-        while(i<alist.length){
-        alist[i].style.color='#c2f225';
-        i++;
-        }
+        linksTextColor('#c2f225')
+
     }
     else{
-        target.style.backgroundColor='#fff';                    
-        target.style.color='#000';
+        Body.setBGColor(target,'#fff');                    
+        Body.setTxtColor(target,'#000');
         self.value='dark';
-        
-        var alist=document.querySelectorAll('a');
-        var i=0;
-        while(i<alist.length){
-        alist[i].style.color='blue';
-        i++;
-}
+
+        linksTextColor('blue');
     }
 }
