@@ -24,11 +24,17 @@
             <div id="header">
                 <div id="logo"></div>
                 <nav id="menu">
+                    <script>
+                        var menu=['Home','About','Article','Contact'];
+                    </script>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="article.html">Article</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <script>
+                            var i =0;
+                            while(i<menu.length){
+                                document.write('<li><a href="'+menu[i]+'.html">'+menu[i]+'</a></li>')
+                                i++;
+                            }
+                        </script>
                     </ul>
                 </nav>
             </div>
