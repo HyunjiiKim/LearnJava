@@ -1,0 +1,20 @@
+body{
+    width: 1040px;
+    margin: 0 auto;
+}
+
+
+#menu li, a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 16pt;
+}
+
+#mode{
+    width: 60px;
+    height: 30px;
+    font-size: 12pt;
+    border-radius: 12px;
+}
