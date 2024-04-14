@@ -1,21 +1,24 @@
 var Links={
     setColor:function(color){
-        var alist=document.querySelectorAll('a');
-        var i=0;
+       /* var alist=document.querySelectorAll('a');
+       var i=0;
         while(i<alist.length){
         alist[i].style.color=color;
         i++;
-        }
+        }*/
+        // .css() : var color = $( this ).css(propertyName,value);
+        $('a').css('color',color); //jQuery starts with $ 
     }
-    
 }
 
 
 var Body={setTxtColor:function(variable,color){
-    variable.style.color=color;},
+    /*variable.style.color=color*/
+    $('body').css('color',color);},
     setBGColor:function(variable,color){
-        variable.style.backgroundColor=color;
-    }
+        /*variable.style.backgroundColor=color;*/
+    $('body').css('backgroundColor',color);
+}
 }
 
 
@@ -40,3 +43,5 @@ function modeHandler(self){
         Links.setColor('blue');
     }
 }
+
+
