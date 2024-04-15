@@ -22,9 +22,6 @@ var Body={setTxtColor:function(variable,color){
 }
 
 
-
-
-
 function modeHandler(self){
     var target =   document.querySelector('body');
     if(self.value==='dark'){
@@ -44,4 +41,6 @@ function modeHandler(self){
     }
 }
 
-
+function loadHtml(file){
+    $("").load("/includes/header.html")
+}
