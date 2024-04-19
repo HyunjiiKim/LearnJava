@@ -11,12 +11,6 @@ var Links={
     }
 }
 
-function importHtml(a,b){
-    $(document).ready(function(){
-        doncument.getElementById('"'+a+"'").innerHTML='\'<object type="text/html" data="includs/"'+b+'.html"></object>\'';
-    })
-}
-
 
 var Body={setTxtColor:function(variable,color){
     /*variable.style.color=color*/

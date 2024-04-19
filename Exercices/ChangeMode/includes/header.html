@@ -1,12 +1,12 @@
 <input type="button" id="mode" value="dark" onclick="modeHandler(this)">
-<div id="header">
-    <div id="logo"></div>
-    <nav id="menu">
-        <script>
-            var menu=['Home','About','Article','Contact'];
-        </script>
-        
-        
-        </ul>
-    </nav>
+<div>
+    <div id="logo">Test</div>
+    <div id="menu"></div>
+    <script>
+        $(document).ready(function(){
+            $('header').load('includes/header.html', function() {
+                $.getScript('menu.js');
+            });
+        });
+    </script>
 </div>

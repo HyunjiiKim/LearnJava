@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="includes/functions.js" defer></script>
     <title>Change Mode</title>
@@ -11,26 +11,17 @@
 <body>
     <header id="header"></header>
     <section>
-        <h1>Comparison Operators & Boolean</h1>
-        <div>
-            <h3>===</h3>
-            <script>
-                document.write("input : 1===1  | output : ",1===1,"<br />");// print : true
-                document.write("input : 1===2  | output : ",1===2); // print : false 
-            </script>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="hero"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
     </section>
+    <footer id="footer"></footer>
     <script>
-        $('footer').load('includes/header.html');
-    </script>
-    <footer>
-        <p id="copyright">©2024 Hyunji Kim. All Rights Reserved.</p>
-    </footer>
-    <script>
-       importHtml(header,header);
+        $(document).ready(function(){
+            $('header').load('includes/header.html');
+            $('footer').load('includes/footer.html');
+        });
     </script>
 </body>
 </html>
